@@ -1,0 +1,55 @@
+.container {
+    padding: 10px;
+    background-color: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
+
+    padding: 10px;
+
+    height: 50vh;
+    width: calc((2/3) * 50vh);
+
+    border: 2px solid #000;
+    border-radius: .5rem;
+}
+
+.card > .left {
+    font-size: 2rem;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.card > .middle {
+    font-size: 4rem;
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+
+    flex: 1;
+
+    display: grid;
+    align-content: space-between;
+    justify-items: center;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card > .middle > div:nth-child(n + 5) {
+    transform: rotate(180deg);
+}
+
+.card > .right {
+    transform: rotate(180deg);
+
+    font-size: 2rem;
+
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
