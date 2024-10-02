@@ -16,7 +16,7 @@
 .top{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding-left: 5%;
     font-size: 40px;
 }
 
@@ -31,7 +31,7 @@
 .bottom{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding-left: 5%;
     font-size: 40px;
     align-self: flex-end;
     transform: rotate(180deg);
