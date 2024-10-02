@@ -1,0 +1,48 @@
+#white-square{
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    width: 400px;
+    height: 400px;
+}
+
+#black-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 500px;
+    background-color: black;
+}
+
+#blue-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid skyblue;
+    width: 70%;
+    height: 70%;
+    border-radius: 500px;
+    background-color: skyblue;
+}
+
+#red-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 60%;
+    height: 60%;
+    border-radius: 500px;
+    background-color: red;
+}
+
+#yellow-circle{
+    display: flex;
+    border: 1px solid yellow;
+    width: 50%;
+    height: 50%;
+    border-radius: 500px;
+    background-color: yellow;
+}
