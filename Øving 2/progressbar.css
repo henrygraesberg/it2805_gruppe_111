@@ -1,0 +1,57 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #fff;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+
+    width: 100vw;
+}
+
+.progressbar {
+    border-radius: 9999px;
+    height: 20px;
+    width: 40%;
+
+    background-color: gray;
+}
+
+.progressbar > .fill {
+    height: 100%;
+    border-radius: 9999px;
+
+    transition: width .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.stage-0 > .fill {
+    width: 0%;
+}
+
+.stage-1 > .fill {
+    width: 33%;
+    background-color: red;
+}
+
+.stage-2 > .fill {
+    width: 66%;
+    background-color: yellow;
+}
+
+.stage-3 > .fill {
+    width: 100%;
+    background-color: green;
+}
