@@ -12,27 +12,22 @@
         <input type="text" id="fname" name="fname" placeholder="John" required><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value="Doe"><br>
-        <label for="pwd">Password:</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8" placeholder="********" required><br>
-        <label for="date">Age:</label><br>
-        <input type="date" id="date" name="age" min="2006-10-16" required><br>
-        <input type="radio" id="male" name="gender" value="Male" checked>
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label><br><br>
-        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
-        <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
-        
+
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="john@email.com" required><br>
-        
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" minlength="8" placeholder="********" required><br>
+
         <label for="phone">Phone number:</label><br>
         <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" placeholder="12345678" required><br>
 
+        <label for="date">Age:</label><br>
+        <input type="date" id="date" name="age" min="2006-10-16" required><br>
+        
         <label for="county">Country:</label><br>
         <select name="country" id="country" required>
+            <option value="" disabled selected>Select your country</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -279,6 +274,13 @@
             <option value="Chad">Chad</option>
         </select><br>
 
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
         <div id="interests">
             <h3 style="margin: 0">Interests:</h3>
             <input type="checkbox" name="sports" id="sports">
@@ -295,14 +297,15 @@
             <label for="cooking">Cooking</label><br>
         </div>
 
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+
         <label for="satisfaction">Satisfaction level:</label><br>
         <input type="range" name="satisfaction" id="satisfaction" min="0" max="10" range="1" oninput="this.nextElementSibling.value = this.value">
         <output>5</output><br>
         
         <label for="profile-picture">Profile picture:</label><br>
         <input type="file" name="profile-picture" id="profile-picture" accept="image/*"><br>
-
-
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
