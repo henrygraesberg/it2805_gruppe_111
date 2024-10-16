@@ -11,7 +11,18 @@
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="John"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" minlength="8" placeholder="********" required><br>
+        <label for="date">Age:</label><br>
+        <input type="date" id="date" name="age" min="2006-10-16" required><br>
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
         <input type="submit" value="Submit">
     </form>
 </body>
