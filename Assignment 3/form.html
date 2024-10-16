@@ -9,18 +9,18 @@
     <form>
         <h2>User Registration</h2>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="John"><br>
+        <input type="text" id="fname" name="fname" placeholder="John" required><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
         
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="john@email.com"><br>
+        <input type="email" id="email" name="email" placeholder="john@email.com" required><br>
         
         <label for="phone">Phone number:</label><br>
-        <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" placeholder="12345678"><br>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" placeholder="12345678" required><br>
 
         <label for="county">Country:</label><br>
-        <select name="country" id="country">
+        <select name="country" id="country" required>
             <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
