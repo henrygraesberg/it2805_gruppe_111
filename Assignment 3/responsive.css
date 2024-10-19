@@ -60,12 +60,22 @@
   }
 
   @media (max-width: 768px) {
-    .feature-item{
-      background-color: rgb(62, 91, 108);
+    .features{
+      display: flex;
+      flex-direction: column;
+      width: 310%;
+      gap: 1rem;
   
     }
+    .feature-item{
+      display: flex;
+      flex-direction: column;
+      max-width: 640px;
+      height: 30%;
+      align-content: space-between;
   }
-  
+}
+
   @media ( max-width: 640px) {
     .feature-item{
       background-color: rgb(161, 98, 109);
@@ -88,18 +98,9 @@
   }
   
   @media ( max-width: 320px) {
-    .features{
-      display: flex;
-      flex-direction: column;
-      width: 310%;
-      gap: 1rem;
+    .feature-item{
+      background-color: rgb(62, 91, 108);
   
     }
-    .feature-item{
-      display: flex;
-      flex-direction: column;
-      max-width: 640px;
-      height: 30%;
-      align-content: space-between;
-    }
+
   } 
