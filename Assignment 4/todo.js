@@ -27,7 +27,7 @@ const addTask = e => {
   Array.from(tasksDOM).map((taskElement, index) => {
     taskElement.addEventListener("change", e => {
       tasks[index].completed = e.target.checked;
-      taskElement.querySelector("label").style.textDecoration = tasks[index].completed ? "line-through" : "none";
+      taskElement.querySelector("label").innerHTML = tasks[index].completed ? tasks[index].name.strike() : tasks[index].name;
       setStatus();
     });
   });
